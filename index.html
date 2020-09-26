@@ -1,155 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>My Website</title>
-</head>
-<body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Website</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero"
+              ><h1>
+                <span>I</span
+                >brahim<span>&nbsp;A</span>bu<span>&nbsp;N</span>emer
+              </h1></a
+            >
+          </div>
+          <div class="nav-list">
+            <div class="hamburger"><div class="bar"></div></div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Hero Section  -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Hello, <span></span></h1>
+          <h1>My Name is <span></span></h1>
+          <h1>Ibrahim <span></span></h1>
+          <a href="#projects" type="button" class="cta">Portfolio</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section  -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title">Recent <span>Projects</span></h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <h1>X Town</h1>
+              <h2>Thesis Project</h2>
+              <p>
+                commercial communication platform, connects between the
+                customers and the services providers.
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/xtown.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>X Change</h1>
+              <h2>Legace Project</h2>
+              <p>
+                It designed to give you the ability to deposit, withdraw, and
+                transfer money from one account to another.
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/xchange.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Edu Me</h1>
+              <h2>Green Field Project</h2>
+              <p>
+                Educational platform that connects the teachers with the
+                students.
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/edume.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img
+              src="https://avatars1.githubusercontent.com/u/46081591?s=400&u=ea0c4ccac4f2af658e70f41c427364f5f0bca3cd&v=4"
+              alt="img"
+            />
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2>Back End Developer</h2>
+          <p>
+            I'm a passionate, persistent, selfdirected, autonomous learner Full
+            Stack Software Engineer with strong will to improve my skills and
+            learn new things.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1R3bl_17kpMOQtaucYpuYzjL48Eq6KvyI/view?usp=sharing"
+            target="_blank"
+            class="cta"
+            >View the Resume</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
+            </div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>+972 592 185 263</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>ibrahim.nemer.1999@gmail.com</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h2>Palestine, Gaza strip, Khanyounis</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
         <div class="brand">
-          <a href="#hero"><h1><span>I</span>brahim<span>&nbsp;A</span>bu<span>&nbsp;N</span>emer</h1></a>
+          <h1>
+            <span>I</span>brahim<span>&nbsp;A</span>bu<span>&nbsp;N</span>emer
+          </h1>
         </div>
-        <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
+        <h2>Feel free to contact me on my social media.</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="https://github.com/IbrahemAtef" target="_blank"
+              ><img src="https://img.icons8.com/bubbles/100/000000/github.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a
+              href="https://www.linkedin.com/in/ibrahim-abu-nemer-8636b51b5/"
+              target="_blank"
+              ><img
+                src="https://img.icons8.com/bubbles/100/000000/linkedin.png"
+            /></a>
+          </div>
         </div>
+        <p>Copyright © 2020 Ibrahim. All rights reserved</p>
       </div>
-    </div>
-  </section>
-  <!-- End Header -->
-
-
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Ibrahim <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>X Town</h1>
-            <h2>Thesis Project</h2>
-            <p>commercial communication platform, connects between the customers and the services providers.</p>
-          </div>
-          <div class="project-img">
-            <img src="https://media.discordapp.net/attachments/740843806869422142/745294181659836466/received_758469121381341.png?width=681&height=481" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>X Change</h1>
-            <h2>Legace Project</h2>
-            <p>It designed to give you the ability to deposit, withdraw, and transfer money from one account to another.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Edu Me</h1>
-            <h2>Green Field Project</h2>
-            <p>Educational platform that connects the teachers with the students.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="https://avatars1.githubusercontent.com/u/46081591?s=400&u=ea0c4ccac4f2af658e70f41c427364f5f0bca3cd&v=4" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Back End Developer</h2>
-        <p>I'm a passionate, persistent, selfdirected, autonomous learner Full Stack Software Engineer with strong will to improve my skills and learn new things.</p>
-        <a href="https://drive.google.com/file/d/1R3bl_17kpMOQtaucYpuYzjL48Eq6KvyI/view?usp=sharing" target="_blank" class="cta">View the Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div><h1 class="section-title">Contact <span>info</span></h1></div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+972 592 185 263</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>ibrahim.nemer.1999@gmail.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Palestine, Gaza strip, Khanyounis</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
-
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand"><h1><span>I</span>brahim<span>&nbsp;A</span>bu<span>&nbsp;N</span>emer</h1></div>
-      <h2>Feel free to contact me on my social media.</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://github.com/IbrahemAtef" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/github.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/ibrahim-abu-nemer-8636b51b5/" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/></a>
-        </div>
-      </div>
-      <p>Copyright © 2020 Ibrahim. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
-</body>
+    </section>
+    <!-- End Footer -->
+    <script src="./app.js"></script>
+  </body>
 </html>
