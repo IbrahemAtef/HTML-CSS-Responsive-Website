@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +6,7 @@
 }
 html {
   font-size: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 a {
@@ -22,7 +22,6 @@ a {
 img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 p {
   color: black;
@@ -159,7 +158,7 @@ p {
 }
 #header .hamburger:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -175,7 +174,7 @@ p {
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -212,7 +211,7 @@ p {
   right: 0;
 }
 #hero::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -304,7 +303,7 @@ p {
   overflow: hidden;
 }
 #services .service-item::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -380,6 +379,27 @@ p {
 #projects .project-info p {
   color: white;
 }
+#projects .all-projects .project-info .project-icons {
+  list-style: none;
+  margin-top: 15px;
+}
+#projects .all-projects .project-info .project-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+#projects .all-projects .project-info .project-icons li a {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+}
+#projects .all-projects .project-info .project-icons li svg {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#projects .all-projects .project-info .project-icons li:hover svg {
+  color: #00a9ff;
+}
 #projects .project-img {
   flex-basis: 50%;
   height: 300px;
@@ -387,7 +407,7 @@ p {
   position: relative;
 }
 #projects .project-img:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -397,10 +417,11 @@ p {
   opacity: 0;
 }
 #projects .project-img img {
-  transition: 0.3s ease transform;
+  transition: 0.9s;
+  filter: grayscale(1);
 }
 #projects .project-item:hover .project-img img {
-  transform: scale(1.1);
+  filter: grayscale(0);
 }
 /* End Projects section */
 
@@ -568,6 +589,20 @@ p {
 /* End Keyframes */
 
 /* Media Query For Tablet */
+@media (max-width: 767px) {
+  #contact .contact {
+    padding-top: 100px;
+  }
+  #projects .all-projects .project-info h1,
+  #projects .all-projects .project-info h2,
+  #projects .all-projects .project-info ul {
+    text-align: center;
+    width: 100%;
+  }
+  #projects .all-projects .project-info {
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
